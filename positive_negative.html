@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+ve/-ve</title>
+    <script>
+        function check() {
+            var n = document.getElementById("num").value;
+            if(n>=0){
+                window.alert(n+" is positive");
+            }
+            else{
+                window.alert(n+" is negative");
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter number : <input type="text" id="num"><br>
+    <button type="button" onclick="check()">Check</button>
+</body>
+</html>

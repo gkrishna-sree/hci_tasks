@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fact() {
+            var i,n,res=1;
+            n = parseInt(document.getElementById("num").value);
+            for(i=1;i<=n;i++){
+                res *=i;                
+            }
+            window.alert("Factorial of "+n+" is "+res);
+        }
+    </script>
+</head>
+<body>
+    Enter a number : <input type="text" id="num"><br>
+    <button type="button" onclick="fact()">Factorial</button>
+</body>
+</html>
