@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Array Elements in Reverse</title>
+</head>
+<body>
+        <label>Enter array:</label><br>
+        <input type="text" id="userinput"><br><br>
+        <input type="button" value="Array in Reverse" onclick="displayReverse()">
+
+        <p id="result"></p>
+
+
+    <script>
+        function displayReverse() 
+        {
+            var input=document.getElementById('userinput').value;
+            var array=input.split(",");
+            var displayArray
+            for(var i=array.length-1;i>=0;i--) 
+            {
+                displayArray+=array[i];
+                if(i>0) 
+                {
+                    displayArray+=", ";
+                }
+            }
+            window.alert(displayArray);
+        }
+    </script>
+</body>
+</html>
