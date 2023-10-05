@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number</title>
+    <style>
+        body {
+            padding: 0;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+        }
+    </style>
+</head>
+<body style="background-color:orange;">
+    <center>
+        <h1 style="color: red">Palindrome Number</h1>
+        Enter a number:<input type="text" id="number" style="color: blue"><br><br>
+        <button type="button" onclick="checkPalindrome()" style="color:green">Check Palindrome</button>
+        <p id="result"></p>
+    </center>
+    <script>
+        function checkPalindrome()
+        {
+            var number=document.getElementById('number').value;
+            var reversedNumber=number.split('').reverse().join('');
+
+            if(number===reversedNumber){
+                document.getElementById('result').textContent=number+'is a palindrome number.';
+            }else
+            {
+                document.getElementById('result').textContent=number+' is not a palindrome number.';
+            }
+        }
+    </script>
+</body>
+</html>
